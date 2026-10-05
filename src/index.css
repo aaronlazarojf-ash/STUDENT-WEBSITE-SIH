@@ -1,0 +1,335 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-gov-bg text-gov-text antialiased;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #F5F7F2;
+}
+
+/* ── Geo-Farm Onion Field Intelligence: restrained operational polish ── */
+/* Primary buttons: solid green, subtle depth, lift + border glow on hover */
+.btn-primary {
+  @apply bg-[#0A6B45] text-white font-bold rounded-[10px] transition-all duration-150;
+  box-shadow: 0 1px 2px rgba(18, 60, 42, 0.25), inset 0 1px 0 rgba(255,255,255,0.12);
+}
+.btn-primary:hover {
+  background-color: #0c7d52;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(10, 107, 69, 0.28), 0 0 0 1px rgba(255,255,255,0.25) inset;
+}
+.btn-primary:active { transform: translateY(1px); box-shadow: 0 1px 2px rgba(18,60,42,0.25); }
+.btn-primary:disabled { @apply opacity-50; transform: none; cursor: not-allowed; }
+.btn-primary:focus-visible {
+  outline: 2px solid #267A70;
+  outline-offset: 2px;
+}
+.btn-primary svg { transition: transform 0.15s ease; }
+.btn-primary:hover svg { transform: translateX(3px); }
+
+.btn-secondary {
+  @apply bg-white font-bold rounded-[10px] border border-[#123C2A]/30 text-[#123C2A] transition-all duration-150;
+  box-shadow: 0 1px 2px rgba(18, 60, 42, 0.06);
+}
+.btn-secondary:hover {
+  border-color: #0A6B45;
+  background-color: #E7F1E8;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(18, 60, 42, 0.10);
+}
+.btn-secondary:active { transform: translateY(1px); }
+.btn-secondary:disabled { @apply opacity-50; transform: none; cursor: not-allowed; }
+
+.btn-tertiary {
+  @apply inline-flex items-center gap-1 text-[12px] font-bold text-[#0A6B45] transition-all duration-150;
+}
+.btn-tertiary svg { transition: transform 0.15s ease; }
+.btn-tertiary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.btn-tertiary:hover svg { transform: translateX(3px); }
+
+/* ── App background: warm off-white + faint GIS texture (scoped, login untouched) ── */
+.app-bg {
+  background-color: #F7F8F4;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(10, 107, 69, 0.035), transparent),
+    linear-gradient(rgba(18, 60, 42, 0.014) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 60, 42, 0.014) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+/* Field-visit working backdrop: slightly darker neutral so the workflow feels distinct */
+.visit-bg {
+  background-color: #ECEFE8;
+  background-image: radial-gradient(rgba(18, 60, 42, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* ── Depth hierarchy: surfaces sit above page, interactives above surfaces ── */
+.surface { @apply bg-white border border-[#DCE4DC] rounded-2xl; box-shadow: 0 1px 2px rgba(18,60,42,0.05); }
+.surface-flat { @apply bg-white/70 border border-[#DCE4DC]/70 rounded-xl; }
+.panel-accent { position: relative; }
+.panel-accent::before {
+  content: ''; position: absolute; top: 0; left: 16px; right: 16px; height: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, transparent, rgba(10,107,69,0.35), transparent);
+  pointer-events: none;
+}
+
+/* ── Typography ── */
+.eyebrow {
+  @apply text-[10px] font-bold uppercase tracking-[0.18em] text-[#0A6B45];
+}
+.display {
+  @apply font-bold tracking-tight text-[#183027];
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.section-title { @apply text-[13px] font-bold text-[#183027]; }
+.meta-label { @apply text-[10px] font-bold uppercase tracking-wider text-[#66756D]; }
+
+/* ── Option / selection buttons (field forms) ── */
+.opt-btn {
+  @apply text-left text-[13px] font-semibold px-3 py-2.5 rounded-[10px] border-2 border-[#DCE4DC] bg-white text-[#183027] transition-all duration-150;
+}
+.opt-btn:hover { border-color: rgba(10,107,69,0.45); transform: translateY(-1px); }
+.opt-btn-selected {
+  @apply border-[#0A6B45] text-[#123C2A] font-bold;
+  background-color: #E7F1E8;
+  box-shadow: inset 0 0 0 1px rgba(10,107,69,0.25);
+}
+
+/* ── Severity selector ── */
+.sev-btn {
+  @apply flex flex-col items-center gap-0.5 py-2.5 px-1 rounded-[10px] border-2 border-[#DCE4DC] bg-white transition-all duration-150 min-w-0;
+}
+.sev-btn:hover { border-color: rgba(10,107,69,0.45); transform: translateY(-1px); }
+.sev-btn-selected { @apply border-[#0A6B45] font-bold; background-color: #E7F1E8; color: #123C2A; box-shadow: inset 0 0 0 1px rgba(10,107,69,0.3); }
+
+/* ── Evidence cards ── */
+.evidence-card { transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease; }
+.evidence-card:hover { border-color: rgba(10,107,69,0.4); box-shadow: 0 3px 10px rgba(18,60,42,0.10); }
+.evidence-card img { transition: transform 0.2s ease; }
+.evidence-card:hover img { transform: scale(1.02); }
+
+/* ── Knowledge cards: image zoom + lift ── */
+.kb-card { transition: box-shadow 0.16s ease, border-color 0.16s ease, transform 0.16s ease; overflow: hidden; }
+.kb-card:hover { transform: translateY(-2px); border-color: rgba(10,107,69,0.35); box-shadow: 0 6px 18px rgba(18,60,42,0.12); }
+.kb-card .kb-img { overflow: hidden; }
+.kb-card .kb-img img { transition: transform 0.25s ease; }
+.kb-card:hover .kb-img img { transform: scale(1.05); }
+
+/* ── Mission cards ── */
+.mission-card { transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease; }
+.mission-card:hover { transform: translateY(-1px); border-color: rgba(10,107,69,0.35); box-shadow: 0 5px 16px rgba(18,60,42,0.10); }
+
+/* ── Nav active polish ── */
+.nav-active-glow { box-shadow: inset 0 0 0 1px rgba(10,107,69,0.12), 0 1px 3px rgba(10,107,69,0.08); }
+
+/* ── Skeleton loading ── */
+.skeleton {
+  @apply rounded-lg bg-[#E7EDE7] relative overflow-hidden;
+}
+.skeleton::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+
+/* ── Drawer / modal / inspector motion ── */
+.drawer-enter { animation: drawerIn 0.22s ease both; }
+@keyframes drawerIn { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+.modal-enter { animation: modalIn 0.2s ease both; }
+@keyframes modalIn { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: none; } }
+.inspector-enter { animation: inspectorIn 0.22s ease both; }
+@keyframes inspectorIn { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
+
+/* ── Urgent pulse (only for urgent markers) ── */
+.urgent-dot { position: relative; }
+.urgent-dot::after {
+  content: ''; position: absolute; inset: -4px; border-radius: 9999px;
+  border: 2px solid rgba(195, 59, 69, 0.5);
+  animation: urgentPulse 2s ease-out infinite;
+}
+@keyframes urgentPulse { 0% { transform: scale(0.7); opacity: 1; } 100% { transform: scale(1.3); opacity: 0; } }
+
+/* ── Sticky mobile field-visit action bar ── */
+.visit-actions {
+  position: sticky; bottom: 0; z-index: 10;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  border: 1px solid #DCE4DC;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 -2px 12px rgba(18,60,42,0.08);
+}
+
+/* ── IPM accordion (native details) ── */
+.ipm-details { @apply border border-[#DCE4DC] rounded-[10px] bg-white overflow-hidden; }
+.ipm-details summary {
+  @apply cursor-pointer list-none flex items-center gap-2 px-3 py-2.5 text-[12px] font-bold text-[#123C2A] transition-colors;
+}
+.ipm-details summary::-webkit-details-marker { display: none; }
+.ipm-details summary:hover { background-color: #F5F7F2; }
+.ipm-details[open] summary { background-color: #E7F1E8; }
+.ipm-details .ipm-body { @apply px-3 py-2.5 text-[12px] text-[#3D4A3D] border-t border-[#DCE4DC]; }
+
+/* ── Assistant question chips ── */
+.qa-chip {
+  @apply text-left text-[12px] font-semibold px-3 py-2 rounded-full border border-[#0A6B45]/30 bg-white text-[#123C2A] transition-all duration-150;
+}
+.qa-chip:hover { background-color: #E7F1E8; border-color: #0A6B45; transform: translateY(-1px); }
+
+/* ── Field-first mobile: keep primary actions reachable ── */
+@media (max-width: 640px) {
+  .btn-primary, .btn-secondary {
+    min-height: 44px;
+  }
+}
+
+/* ── Accessibility: visible focus everywhere ── */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #267A70;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Scrollbar styling for panels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Leaflet map container overrides for light theme */
+.leaflet-container {
+  background: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  border-radius: 0.5rem;
+  border: 1px solid #D9DEE5;
+}
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #222222;
+  border-radius: 0.25rem;
+  border: 1px solid #D9DEE5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.leaflet-popup-tip {
+  background: #ffffff;
+}
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #555555 !important;
+}
+.leaflet-control-attribution a {
+  color: #174A7E !important;
+}
+.leaflet-control-zoom a {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+  border-color: #D9DEE5 !important;
+}
+.leaflet-control-zoom a:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Shared-node sensor radius pulse marker (kept for map, but styled lighter) */
+.sensor-pulse-marker {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.8);
+}
+.sensor-pulse-marker::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: inherit;
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  70% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Utility: replacing glass-panel with standard gov card */
+.glass-panel {
+  @apply bg-white border border-gov-border shadow-card rounded-md;
+}
+
+/* Devanagari script rendering for Marathi content */
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+}
+
+/* Live telemetry blinking indicator (subtle) */
+.live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #2E7D32;
+}
+
+/* Field Scout portal — compact form input */
+.input {
+  @apply w-full px-3 py-2 text-sm border border-gov-border rounded-lg focus:outline-none focus:ring-2 focus:ring-gov-blue/30 focus:border-gov-blue bg-white;
+}
+
+/* ── Bits: SpringCheck field-checklist rows ── */
+.springcheck[data-checked="true"] {
+  background-color: #E7F1E8;
+}
+.springcheck:hover { background-color: #F5F7F2; }
+.springcheck[data-checked="true"]:hover { background-color: #DFEDDF; }
+.springcheck:focus-within {
+  outline: 2px solid #267A70;
+  outline-offset: 1px;
+}
+
+/* ── Shared interaction utilities (used across components) ── */
+.nav-item { transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease; }
+.card-hover { transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease; }
+.card-hover:hover {
+  border-color: #0A6B4555;
+  box-shadow: 0 4px 14px rgba(18, 60, 42, 0.10);
+}
+.page-enter { animation: pageFade 0.22s ease both; }
+@keyframes pageFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-enter, .btn-primary, .btn-secondary, .btn-tertiary, .card-hover, .kb-card,
+  .mission-card, .drawer-enter, .modal-enter, .inspector-enter,
+  .skeleton::after, .urgent-dot::after, .sensor-pulse-marker::after {
+    animation: none !important; transition: none !important;
+  }
+  .btn-primary:hover, .btn-secondary:hover { transform: none; }
+}

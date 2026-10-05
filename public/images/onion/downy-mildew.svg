@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img">
+  <title>Downy mildew reference illustration</title>
+  <rect width="400" height="300" fill="#EFF3EC"/>
+  <g stroke="#D8E2D5" stroke-width="2">
+    <line x1="0" y1="120" x2="400" y2="100"/>
+    <line x1="0" y1="160" x2="400" y2="140"/>
+  </g>
+  <rect y="215" width="400" height="85" fill="#C9B18C"/>
+  <rect y="215" width="400" height="10" fill="#B89B72"/>
+  <g>
+    <g transform="translate(110,0)">
+      <ellipse cx="0" cy="212" rx="15" ry="11" fill="#EDE6D2"/>
+      <path d="M0,210 C-10,160 -8,105 -2,55 C2,105 6,160 0,210 Z" fill="#4C9A68"/>
+      <path d="M-2,208 C-22,170 -30,120 -34,80 C-20,115 -8,165 -2,208 Z" fill="#3E8E5F"/>
+      <path d="M2,208 C22,168 30,118 34,82 C20,116 8,164 2,208 Z" fill="#57A172"/>
+      <g opacity="0.95">
+        <ellipse cx="-26" cy="115" rx="12" ry="16" fill="#D9D77A" transform="rotate(-12 -26 115)"/>
+        <ellipse cx="-26" cy="115" rx="7" ry="10" fill="#C4C4C4" transform="rotate(-12 -26 115)"/>
+        <circle cx="-30" cy="108" r="2.4" fill="#E4E4E4"/>
+        <circle cx="-23" cy="118" r="2" fill="#E4E4E4"/>
+        <circle cx="-28" cy="126" r="1.8" fill="#EDEDED"/>
+        <ellipse cx="20" cy="150" rx="10" ry="13" fill="#D9D77A" transform="rotate(12 20 150)"/>
+        <ellipse cx="20" cy="150" rx="5.5" ry="8" fill="#C4C4C4" transform="rotate(12 20 150)"/>
+      </g>
+    </g>
+    <g transform="translate(205,0)">
+      <ellipse cx="0" cy="212" rx="15" ry="11" fill="#EDE6D2"/>
+      <path d="M0,210 C-9,155 -7,100 0,45 C7,100 9,155 0,210 Z" fill="#7FA653"/>
+      <path d="M-1,208 C-18,168 -24,140 -30,118 C-30,150 -14,185 -1,208 Z" fill="#A8A15A"/>
+      <path d="M1,208 C20,168 26,120 28,85 C16,115 7,162 1,208 Z" fill="#4C9A68"/>
+      <path d="M-30,118 C-32,100 -30,88 -28,80 C-26,92 -26,105 -30,118 Z" fill="#B9B06A"/>
+      <g opacity="0.95">
+        <ellipse cx="2" cy="120" rx="11" ry="15" fill="#D9D77A"/>
+        <ellipse cx="2" cy="120" rx="6" ry="9" fill="#CFCFCF"/>
+        <circle cx="-1" cy="114" r="2.2" fill="#E7E7E7"/>
+        <circle cx="5" cy="124" r="1.9" fill="#EDEDED"/>
+      </g>
+    </g>
+    <g transform="translate(295,0)">
+      <ellipse cx="0" cy="212" rx="15" ry="11" fill="#EDE6D2"/>
+      <path d="M0,210 C-10,162 -8,108 -2,58 C2,108 6,162 0,210 Z" fill="#4C9A68"/>
+      <path d="M-2,208 C-21,172 -28,122 -31,85 C-18,118 -8,166 -2,208 Z" fill="#3E8E5F"/>
+      <path d="M2,208 C20,170 26,122 29,88 C17,120 7,166 2,208 Z" fill="#57A172"/>
+      <g opacity="0.9">
+        <ellipse cx="18" cy="125" rx="8" ry="11" fill="#D9D77A" transform="rotate(10 18 125)"/>
+        <ellipse cx="18" cy="125" rx="4.5" ry="6.5" fill="#CFCFCF" transform="rotate(10 18 125)"/>
+      </g>
+    </g>
+  </g>
+</svg>

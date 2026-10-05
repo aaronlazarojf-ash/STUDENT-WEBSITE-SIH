@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img">
+  <title>Bacterial soft rot reference illustration</title>
+  <rect width="400" height="300" fill="#F1F5EF"/>
+  <rect y="225" width="400" height="75" fill="#D8CFB8"/>
+  <rect y="225" width="400" height="8" fill="#C4B998"/>
+  <g>
+    <ellipse cx="200" cy="168" rx="92" ry="74" fill="#C9A86A"/>
+    <ellipse cx="200" cy="172" rx="78" ry="61" fill="#B89B5A"/>
+    <path d="M200,112 C165,128 145,152 145,176 C162,164 180,158 200,157 C220,158 238,164 255,176 C255,152 235,128 200,112 Z" fill="#A3854E"/>
+    <path d="M200,157 C170,165 150,180 148,200 C160,192 178,186 200,186 C222,186 240,192 252,200 C250,180 230,165 200,157 Z" fill="#8F7440"/>
+    <path d="M200,186 C178,190 162,198 158,210 C172,204 186,202 200,202 C214,202 228,204 242,210 C238,198 222,190 200,186 Z" fill="#7A6234"/>
+    <path d="M170,150 C185,170 190,195 188,220" stroke="#D9C08A" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <ellipse cx="232" cy="196" rx="16" ry="9" fill="#CFC09A" opacity="0.85"/>
+    <path d="M150,205 C170,215 230,215 250,205" stroke="#6E5A30" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M138,120 C150,140 165,148 178,152 C165,145 152,135 138,120 Z" fill="#6E5A30"/>
+  </g>
+  <ellipse cx="200" cy="252" rx="88" ry="10" fill="#000000" opacity="0.08"/>
+</svg>

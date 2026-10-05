@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img">
+  <title>Pink root reference illustration</title>
+  <rect width="400" height="300" fill="#F1F5EF"/>
+  <rect y="140" width="400" height="160" fill="#C9B18C"/>
+  <rect y="140" width="400" height="10" fill="#B89B72"/>
+  <g>
+    <g transform="translate(140,0)">
+      <path d="M0,140 C-10,100 -10,60 -3,25 C3,60 5,100 0,140 Z" fill="#8FA653"/>
+      <path d="M-2,138 C-18,105 -24,65 -26,35 C-14,65 -6,102 -2,138 Z" fill="#7A9A4A"/>
+      <path d="M2,138 C18,102 24,62 26,38 C14,66 7,100 2,138 Z" fill="#9AB45E"/>
+      <ellipse cx="0" cy="172" rx="30" ry="36" fill="#D9C08A"/>
+      <ellipse cx="0" cy="178" rx="23" ry="29" fill="#C9A86A"/>
+      <g stroke-linecap="round" fill="none">
+        <path d="M-12,200 C-16,225 -22,245 -30,260" stroke="#D97A8A" stroke-width="5"/>
+        <path d="M-4,204 C-5,228 -8,248 -12,266" stroke="#C25A6A" stroke-width="5"/>
+        <path d="M5,204 C7,226 8,246 6,264" stroke="#D97A8A" stroke-width="5"/>
+        <path d="M13,200 C18,222 24,240 30,254" stroke="#C25A6A" stroke-width="4.5"/>
+        <path d="M0,205 C0,230 -2,250 -4,268" stroke="#E09AA6" stroke-width="4"/>
+        <path d="M-18,205 C-24,220 -30,232 -38,242" stroke="#E8B7BE" stroke-width="3.5"/>
+      </g>
+    </g>
+    <g transform="translate(270,0)" opacity="0.9">
+      <path d="M0,142 C-8,108 -8,72 -2,40 C4,72 5,108 0,142 Z" fill="#8FA653"/>
+      <path d="M2,140 C16,108 22,72 24,48 C13,74 6,106 2,140 Z" fill="#9AB45E"/>
+      <ellipse cx="0" cy="172" rx="24" ry="29" fill="#D9C08A"/>
+      <g stroke-linecap="round" fill="none">
+        <path d="M-8,196 C-11,218 -15,236 -21,250" stroke="#D97A8A" stroke-width="4.5"/>
+        <path d="M4,198 C6,218 8,236 7,252" stroke="#C25A6A" stroke-width="4.5"/>
+        <path d="M12,194 C16,212 21,226 26,238" stroke="#E09AA6" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+  <g fill="#8A7A5A" opacity="0.6">
+    <ellipse cx="90" cy="250" rx="9" ry="4"/>
+    <ellipse cx="330" cy="262" rx="10" ry="4"/>
+  </g>
+</svg>

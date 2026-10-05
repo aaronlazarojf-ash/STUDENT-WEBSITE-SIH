@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img">
+  <title>Fusarium basal rot reference illustration</title>
+  <rect width="400" height="300" fill="#F1F5EF"/>
+  <rect y="150" width="400" height="150" fill="#C9B18C"/>
+  <rect y="150" width="400" height="10" fill="#B89B72"/>
+  <g stroke="#A98F68" stroke-width="3" stroke-linecap="round">
+    <line x1="150" y1="235" x2="130" y2="285"/>
+    <line x1="165" y1="238" x2="160" y2="290"/>
+    <line x1="180" y1="235" x2="195" y2="282"/>
+    <line x1="250" y1="238" x2="240" y2="288"/>
+    <line x1="265" y1="236" x2="275" y2="284"/>
+  </g>
+  <g>
+    <g transform="translate(165,0)">
+      <path d="M0,150 C-12,110 -12,70 -4,30 C2,70 4,110 0,150 Z" fill="#B9B06A"/>
+      <path d="M-3,148 C-22,115 -30,75 -32,40 C-18,72 -8,112 -3,148 Z" fill="#A8A15A"/>
+      <path d="M3,148 C20,112 26,72 28,42 C16,74 8,110 3,148 Z" fill="#C4B45E"/>
+      <ellipse cx="0" cy="190" rx="34" ry="42" fill="#D9C08A"/>
+      <ellipse cx="0" cy="196" rx="26" ry="34" fill="#C9A86A"/>
+      <path d="M-26,196 C-26,225 -14,238 0,238 C14,238 26,225 26,196 C20,214 10,222 0,222 C-10,222 -20,214 -26,196 Z" fill="#8A5A2B"/>
+      <path d="M-14,222 C-10,230 -4,233 0,233 C4,233 10,230 14,222 C8,228 -8,228 -14,222 Z" fill="#6E421E"/>
+      <path d="M-34,160 C-30,175 -20,186 0,188 C-18,184 -28,174 -34,160 Z" fill="#7A4E24"/>
+    </g>
+    <g transform="translate(268,0)" opacity="0.92">
+      <path d="M0,155 C-10,118 -10,80 -3,45 C3,80 5,118 0,155 Z" fill="#C4B45E"/>
+      <path d="M-2,153 C-18,122 -24,85 -26,55 C-14,85 -6,118 -2,153 Z" fill="#B9B06A"/>
+      <ellipse cx="0" cy="192" rx="27" ry="34" fill="#D9C08A"/>
+      <ellipse cx="0" cy="197" rx="20" ry="27" fill="#C9A86A"/>
+      <path d="M-20,197 C-20,220 -10,231 0,231 C10,231 20,220 20,197 C15,212 8,218 0,218 C-8,218 -15,212 -20,197 Z" fill="#8A5A2B"/>
+    </g>
+    <g transform="translate(80,0)" opacity="0.55">
+      <path d="M0,160 C-8,125 -8,90 -2,60 C4,90 5,125 0,160 Z" fill="#7FA653"/>
+      <ellipse cx="0" cy="195" rx="24" ry="30" fill="#D9C08A"/>
+    </g>
+  </g>
+  <g fill="#8A7A5A" opacity="0.6">
+    <ellipse cx="120" cy="260" rx="9" ry="4"/>
+    <ellipse cx="300" cy="255" rx="10" ry="4"/>
+    <ellipse cx="200" cy="272" rx="8" ry="3"/>
+  </g>
+</svg>
